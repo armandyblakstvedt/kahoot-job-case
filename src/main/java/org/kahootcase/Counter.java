@@ -89,13 +89,20 @@ public class Counter {
 
 
     public String toString(){
+        /* Sort the email counts */
         Map<String, Integer> sortedEmailCounts = new HashMap<String, Integer>();
         sortedEmailCounts = emailCounts.entrySet().stream()
             .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
             .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+
+        /* Build the string */
         StringBuilder sb = new StringBuilder();
         sb.append("\n");
+
+        /* Keep track of the iterations */
         int i = 0;
+
+        /* Print the top n domains */
         for (String domain : sortedEmailCounts.keySet()) {
             if (n != 0 && i >= n) {
                 break;
