@@ -42,8 +42,6 @@ java -jar target/kahoot-job-case-1.0-SNAPSHOT.jar <n> <filename>
 
 NOTE: **If you wish to use a custom file, it must be in the ./src/resources/ directory.**
 
-Alternatively, you can build the jar file yourself using Maven.
-
 ### Running tests
 
 To run the tests, you can use the following command:
