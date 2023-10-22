@@ -36,7 +36,7 @@ To run the jar file, you can use the following command:
 java -jar target/kahoot-job-case-1.0-SNAPSHOT.jar <n> <filename>
 ```
 
-> n - the number of domains to return. If not specified, the program will return the top 10 domains.
+> n - the number of domains to return. If not specified, the program will return all domains.
 
 > filename - the file containing the email addresses. If not specified, the program will read from standard input. You can also use emails.txt as an example file.
 
