@@ -2,7 +2,7 @@ package org.kahootcase;
 
 public class TopDomains {
     public static void main(String[] args) {
-        InputReader inputReader = new InputReader();
+        InputReader inputReader;
         if (args.length == 1) {
             try {
                 Integer.parseInt(args[0]);
@@ -20,6 +20,8 @@ public class TopDomains {
                 return;
             }
             inputReader = new InputReader(Integer.parseInt(args[0]), args[1]);
+        } else {
+            inputReader = new InputReader();
         }
         inputReader.run();
     }
