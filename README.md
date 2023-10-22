@@ -20,8 +20,6 @@ sondre@gmail.com
 
 ## Usage
 
-To run the program, you can either run the jar file in the target directory.
-
 ### Building the jar file
 
 To build the jar file, you can use the following command:
