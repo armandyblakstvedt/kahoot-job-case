@@ -1,4 +1,4 @@
-package org.example;
+package org.kahootcase;
 
 public class TopDomains {
     public static void main(String[] args) {

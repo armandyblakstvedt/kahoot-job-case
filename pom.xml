@@ -21,7 +21,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.2.1</version>
                 <configuration>
-                    <mainClass>org.example.TopDomains</mainClass>
+                    <mainClass>org.kahootcase.TopDomains</mainClass>
                     <arguments>
                         <argument>10</argument>
                         <argument>emails.txt</argument>
@@ -43,7 +43,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <!-- here we specify that we want to use the main method within the App class -->
-                            <mainClass>org.example.TopDomains</mainClass>
+                            <mainClass>org.kahootcase.TopDomains</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
