@@ -35,15 +35,13 @@ public class InputReader {
         /* Use our object to count the domains in the text file */
         counter.count(inputStream);
 
-
-
         /* Print the results */
         System.out.println(counter.toString());
     }
 
     public void readInput() {
         /* Ask user for input */
-        System.out.println("\nPlease enter a list of emails separated by a new line");
+        System.out.println("\nPlease enter a list of emails separated by a new line. When you are done, press enter twice.");
         StringBuilder input = new StringBuilder();
         /** User should be able to input multiple lines */
         while (scanner.hasNextLine()) {
